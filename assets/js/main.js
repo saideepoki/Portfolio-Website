@@ -141,22 +141,7 @@
       loop: true,
       typeSpeed: 100,
       backSpeed: 50,
-      backDelay: 1000
-    });
-  }
-
-  // about type effect
-
-  const type = select('.typed')
-  if (type) {
-    let typed_strings = type.getAttribute('data-typed-items')
-    typed_strings = typed_strings.split('')
-    new Typed('.typed', {
-      strings: typed_strings,
-      loop: true,
-      typeSpeed: 100,
-      backSpeed: 50,
-      backDelay: 2000
+      backDelay: 1500
     });
   }
 
@@ -258,6 +243,12 @@ fadeListItems();
     height: '90vh'
   });
 
+  // Get the toggle button and navigation menu
+const toggleBtn = document.getElementById('toggleButton');
+const navMenu = document.getElementById('navbar');
+
+
+
   /**
    * Portfolio details slider
    */
@@ -309,5 +300,7 @@ fadeListItems();
    * Initiate Pure Counter 
    */
   new PureCounter();
+
+  
 
 })()
